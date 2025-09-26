@@ -1,1 +1,44 @@
 /*  your css code here. If applicable */
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #eee;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  height: 80vh;
+}
+
+.card {
+  flex: 1;
+  margin: 5px;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  transition: flex 0.5s;
+  position: relative;
+  cursor: pointer;
+}
+
+.card p {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: #fff;
+  font-size: 20px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.card.active {
+  flex: 4;
+}
+
+.card.active p {
+  opacity: 1;
+}
