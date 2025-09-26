@@ -14,7 +14,7 @@ body {
   height: 80vh;
 }
 
-.card {
+.panel {
   flex: 1;
   margin: 5px;
   border-radius: 15px;
@@ -25,7 +25,7 @@ body {
   cursor: pointer;
 }
 
-.card p {
+.panel img-text {
   position: absolute;
   bottom: 15px;
   left: 15px;
@@ -35,10 +35,10 @@ body {
   transition: opacity 0.3s;
 }
 
-.card.active {
+.panel.active {
   flex: 4;
 }
 
-.card.active p {
+.panel.active img text{
   opacity: 1;
 }

@@ -1,9 +1,9 @@
 //your JS code here. If required.
-const cards = document.querySelectorAll('.card');
+const panels = document.querySelectorAll('.panel');
 
-cards.forEach(card => {
-  card.addEventListener('click', () => {
-    cards.forEach(c => c.classList.remove('active'));
-    card.classList.add('active');
+panels.forEach(panel => {
+panel.addEventListener('click', () => {
+    panels.forEach(p => p.classList.remove('active'));
+    panels.classList.add('active');
   });
 });
