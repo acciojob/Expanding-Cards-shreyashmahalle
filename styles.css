@@ -1,17 +1,8 @@
-/*  your css code here. If applicable */
-body {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: #eee;
-}
-
 .container {
   display: flex;
   width: 90%;
   height: 80vh;
+  margin: auto;
 }
 
 .panel {
@@ -25,7 +16,7 @@ body {
   cursor: pointer;
 }
 
-.panel img-text {
+.panel .img-text {
   position: absolute;
   bottom: 15px;
   left: 15px;
@@ -39,6 +30,6 @@ body {
   flex: 4;
 }
 
-.panel.active img text{
+.panel.active .img-text {
   opacity: 1;
 }
